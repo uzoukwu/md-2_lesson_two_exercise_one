@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAlignment="inherit"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tbProfileBackground"
+        android:layout_width="406dp"
+        android:layout_height="231dp"
+        android:background="#009688"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="#03A9F4"
+        android:backgroundTint="#51FFFFFF"
+        android:fontFamily="monospace"
+        android:text="@string/tvUserName"
+        android:textAlignment="center"
+        android:textColor="#393435"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivProfilePicture" />
+
+    <ImageView
+        android:id="@+id/ivProfilePicture"
+        android:layout_width="253dp"
+        android:layout_height="165dp"
+        android:layout_marginTop="92dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/woman" />
+
+    <ImageView
+        android:id="@+id/ivLocationIcon"
+        android:layout_width="17dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="@+id/tvUserNickName"
+        app:layout_constraintTop_toBottomOf="@+id/tvUserNickName"
+        app:srcCompat="@drawable/location" />
+
+    <TextView
+        android:id="@+id/tvUserNickName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="#00E91EAF"
+        android:padding="3dp"
+        android:paddingStart="3dp"
+        android:paddingLeft="3dp"
+        android:paddingTop="3dp"
+        android:paddingEnd="3dp"
+        android:paddingRight="3dp"
+        android:paddingBottom="3dp"
+        android:text="@string/tvUserNickName"
+        android:textColor="#393435"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvUserName" />
+
+    <TextView
+        android:id="@+id/tvCity"
+        android:layout_width="111dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="36dp"
+        android:padding="3dp"
+        android:text="@string/tvCity"
+        android:textColor="#393435"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/ivLocationIcon"
+        app:layout_constraintTop_toBottomOf="@+id/tvUserNickName" />
+
+    <TextView
+        android:id="@+id/tvFriends"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="@string/tvFriends"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvFriendCount"
+        app:layout_constraintStart_toStartOf="@+id/tvFriendCount"
+        app:layout_constraintTop_toBottomOf="@+id/tvFriendCount" />
+
+    <TextView
+        android:id="@+id/tvFriendCount"
+        android:layout_width="69dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="8dp"
+        android:paddingStart="14dp"
+        android:text="@string/tvFriendCount"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivLocationIcon" />
+
+    <TextView
+        android:id="@+id/tvHobbies"
+        android:layout_width="88dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="112dp"
+        android:background="#00BCD4"
+        android:paddingStart="14dp"
+        android:text="@string/tvHobbies"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/ivFriend2"
+        tools:layout_editor_absoluteY="375dp" />
+
+    <ImageView
+        android:id="@+id/ivFriend1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.084"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvFriends"
+        app:srcCompat="@drawable/friend1" />
+
+    <ImageView
+        android:id="@+id/ivFriend2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.009"
+        app:layout_constraintStart_toEndOf="@+id/ivFriend3"
+        app:layout_constraintTop_toBottomOf="@+id/tvFriends"
+        app:srcCompat="@drawable/friend2" />
+
+    <ImageView
+        android:id="@+id/ivFriend4"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivFriend1"
+        app:srcCompat="@drawable/friend4" />
+
+    <ImageView
+        android:id="@+id/ivFriend5"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@+id/ivFriend4"
+        app:layout_constraintTop_toBottomOf="@+id/ivFriend3"
+        app:srcCompat="@drawable/friend5" />
+
+    <ImageView
+        android:id="@+id/ivFriend3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toEndOf="@+id/ivFriend1"
+        app:layout_constraintTop_toBottomOf="@+id/tvFriends"
+        app:srcCompat="@drawable/friend3" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tbMainMenu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#0A3733"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tbProfileBackground" />
+
+    <SearchView
+        android:id="@+id/svSearch"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
