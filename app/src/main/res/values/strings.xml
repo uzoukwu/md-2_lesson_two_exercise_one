@@ -2,9 +2,13 @@
     <string name="app_name">lesson_two_exercise_one</string>
     <string name="tvUserName">MARYANNE BEATRICE</string>
     <string name="tvUserNickName">\@Cookie9942</string>
-    <string name="tvCity">Kyiv, Ukraine</string>
+    <string name="tvCity">Kyiv,Ukraine</string>
     <string name="tvFriends">friends</string>
     <string name="tvFriendCount">1,204K</string>
     <string name="tvHobbies">Hobbies</string>
     <string name="tvUserPictures">Photos</string>
+    <string name="tvProfilePictures">Photos</string>
+    <string name="tvCoding">Coding</string>
+    <string name="tvSewing">Sewing</string>
+    <string name="tvHiking">Hiking</string>
 </resources>
